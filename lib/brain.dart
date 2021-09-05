@@ -521,6 +521,8 @@ class Brain{
   int getSurahNum(int num){
     return num+1;
   }
-
+List<String> getSurahsNames(){
+  return _map.keys.toList();
+}
 
 }
