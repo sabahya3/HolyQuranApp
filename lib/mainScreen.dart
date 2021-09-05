@@ -18,7 +18,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  final myController = TextEditingController();
+ // final myController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
