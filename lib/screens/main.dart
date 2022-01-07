@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
 
 
       ),
-      home: MyHomePage(title: 'القرأن الكريم'),
+      home: MyHomePage(title: 'القرآن الكريم'),
     );
   }
 }
@@ -51,23 +51,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
 
-        appBar: AppBar(
-          title: Text("القرأن الكريم"),
-          centerTitle:true ,
-          backgroundColor: Colors.teal,
-        ),
-        body: SplashScreen(
-          backgroundColor: Colors.white,
-         seconds: 2,
-          image: Image.asset("assets/images/qu.png"),
-          photoSize: 180,
-          loadingText: Text("اذكر الله",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-          navigateAfterSeconds: MainScreen(),
+      appBar: AppBar(
+        title: Text("القرآن الكريم"),
+        centerTitle:true ,
+        backgroundColor: Colors.teal,
+      ),
+      body: SplashScreen(
+        backgroundColor: Colors.white,
+       seconds: 2,
+        image: Image.asset("assets/images/qu.png"),
+        photoSize: 180,
+        loadingText: Text("اذكر الله",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+        navigateAfterSeconds: MainScreen(),
 
-        ),
       ),
     );
   }

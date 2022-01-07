@@ -62,16 +62,19 @@ class AboutUs extends StatelessWidget {
               ),
               borderRadius: BorderRadius.circular(8)),
           padding: EdgeInsets.all(20),
-          child: Text(
-            '''
-          هذا التطبيق صدقة جارية علي روح كلا من
-           -الدكتورة ياسمين محمد زين العابدين 
-           والمرحوم متولي الشحات البهوتي.
-           والمرحوم عبدالمنعم أحمد العايدي.
-           والمرحومة سعاد عوض البهوتي.
-           غفر الله لهم جميعا نسألكم الدعاء وقراءة الفاتحة لهم ولجميع موتي المسلمين.
-          
-          '''  ,style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
+          child: SingleChildScrollView(
+            child: Text(
+              '''
+            هذا التطبيق صدقة جارية عن روح كلا من
+            - علي أحمد مزروع 
+             والدكتورة ياسمين  زين العابدين.
+             والمرحوم متولي الشحات البهوتي.
+             والمرحوم عبدالمنعم أحمد العايدي.
+             والمرحومة سعاد عوض البهوتي.
+             غفر الله لهم جميعا نسألكم الدعاء وقراءة الفاتحة لهم ولجميع موتي المسلمين.
+            
+            '''  ,style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
+          ),
 
 
           )

@@ -97,13 +97,16 @@ class _TasbeehState extends State<Tasbeeh> {
                 textStyle: TextStyle(fontSize: 20,color: Colors.white),
                 decoration: BoxDecoration(
                   color: Colors.black.withOpacity(0.7),
-                  border: Border.all(color: Colors.black,width: 5),
+                  border: Border.all(color: Colors.black,width: 3),
                   borderRadius: BorderRadius.circular(8),
 
                 ),
                 child: Container(
                   child: FlatButton(
-                    splashColor: Colors.yellow.withOpacity(0.5),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(75)
+                    ),
+                    splashColor: Colors.purple.withOpacity(0.5),
 
                     onPressed: () {
                       setState(() {
@@ -117,7 +120,7 @@ class _TasbeehState extends State<Tasbeeh> {
                   width: 150,
                   height: 150,
                   decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black,width: 5),
+                      border: Border.all(color: Colors.black,width: 3),
                       gradient: LinearGradient(
                         begin: Alignment.topRight,
                         end: Alignment.bottomLeft,
@@ -150,7 +153,10 @@ border: Border.all(color: Colors.black,width: 5),
                 color: Colors.red,
                       borderRadius: BorderRadius.circular(35)),
                   child: FlatButton(
-                    splashColor: Colors.yellow,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(35)
+                    ),
+                    splashColor: Colors.purple,
 
                     onPressed: () {
                       setState(() {
